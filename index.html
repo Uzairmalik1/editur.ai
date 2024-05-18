@@ -42,6 +42,15 @@
     .max-w-7xl {
         max-width: 100rem;
     }
+    .sm-video-width{
+        width: 40%;
+    }
+    .sm-padding-top{
+        padding-top: 14rem;
+    }
+    .sm-font-size{
+        font-size: 4rem;
+    }
 
     @media screen and (max-width: 1020px) {
         .small-display {
@@ -67,6 +76,12 @@
         .video-hight{
             height: 100%;
         }
+        .sm-padding-top{
+        padding-top: 2rem;
+        }
+        .sm-font-size{
+        font-size: 3rem;
+        }
     }
 </style>
 
@@ -79,7 +94,7 @@
 
             <div class="flex lg:flex-1">
                 <a href="#" class="font-display flex items-center p-1.5">
-                    <img src="./Ed.png" class="w-6" alt="image">
+                    <img src="./Ed.png" class="w-6" alt="">
                     <span class="ml-2 block font-semibold text-xl">Editur.ai</span>
                 </a>
             </div>
@@ -134,14 +149,14 @@
 
             <div class="mt-20 md:mt-0">
                 <div class="relative mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="py-24 sm:py-32 lg:px-8 lg:py-48" style="padding-top: 14rem;">
+                    <div class=" sm:py-32 lg:px-8 lg:py-48 sm-padding-top" >
                         <div class="flex gap-2 justify-around small-display">
 
                             <div class="small-center">
 
 
-                                <h1 class="font-fancy text-4xl font-bold leading-snug tracking-tight text-neutral-800  md:text-7xl lg:leading-none"
-                                    style="font-size: 4rem;">
+                                <h1 class="font-fancy text-4xl font-bold leading-snug tracking-tight text-neutral-800  md:text-7xl lg:leading-none sm-font-size"
+                                >
                                     Convert your <br> <span class="ml-2 text-violet-600 lg:ml-0">Long videos</span>
 
                                     into <br>
@@ -162,7 +177,7 @@
 
                             </div>
 
-                            <div class="sm-video-width flex" style="width: 35rem;">
+                            <div class="sm-video-width flex">
 
 
                                 <div class="aspect-video video-sm-width overflow-hidden mt-1 rounded bg-neutral-100"
@@ -180,12 +195,12 @@
 
                         <div class="mt-12 flex flex-col items-center gap-2">
                             <a href="/register"
-                                class="group relative rounded-full bg-violet-600 py-3.5 font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-700">
+                                class="group flex relative rounded-full bg-violet-600 py-3.5 font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-700">
 
 
-                                <span class="ml-10">Get Started</span>
+                                <span class="ml-4">Get Started</span>
                                 <span
-                                    class="ml-2 mr-7 inline-block -translate-y-px rounded-full bg-violet-800 px-3 py-1 text-xs font-medium leading-tight text-white transition-transform group-hover:scale-105">
+                                    class="ml-2 mr-4 inline-block -translate-y-px rounded-full bg-violet-800 px-3 py-1 text-xs font-medium leading-tight text-white transition-transform group-hover:scale-105">
                                     2 videos free
                                 </span>
                             </a>
@@ -200,13 +215,13 @@
                             <div  class="isolate mt-14 items-center space-y-2 md:flex md:-space-x-2 md:space-y-0">
                                 <img x-on:click="createConfetti" id="aaron"
                                     class="relative z-30 inline-block h-10 w-10 rounded-full ring-2 ring-white delay-1000 hover:scale-[1200%]"
-                                    src="./azeeem.jpg" alt="">
+                                    src="/azeeem.jpg" alt="">
                                 <img class="relative z-20 inline-block h-10 w-10 rounded-full ring-2 ring-white"
-                                    src="./hasnain.jpg" alt="">
+                                    src="/hasnain.jpg" alt="">
                                 <img class="relative z-10 inline-block h-10 w-10 rounded-full ring-2 ring-white"
-                                    src="./hassan.jpg" alt="">
+                                    src="/hassan.jpg" alt="">
                                 <img class="relative z-0 inline-block h-10 w-10 rounded-full ring-2 ring-white"
-                                    src="./jenny.jpg" alt="">
+                                    src="/jenny.jpg" alt="">
 
                                 <div class="text-sm text-neutral-500 md:pl-6">
                                     25,451 creators have re-purposed 44,875 videos into&hellip;
@@ -214,7 +229,7 @@
                             </div>
                         </div>
 
-                        <div class="relative">
+                        <div class="relative w-11/12 m-auto">
 
 
 
@@ -236,29 +251,29 @@
                                             more.
                                         </p>
 
-                                        <div class="relative inset-y-0 mt-4 h-72">
-                                            <div class="absolute flex w-[100%] gap-x-4">
-                                                <div class="aspect-video video-hight h-72 overflow-hidden rounded bg-neutral-100">
-                                                    <video
+                                        <div class="relative inset-y-0 mt-4 h-64">
+                                            <div class="absolute flex w-[200%] gap-x-4">
+                                                <div class="aspect-video rounded ">
+                                                    <video class="h-64"
                                                         src="https://s3.us-east-1.amazonaws.com/remotionlambda-useast1-se782d1snq/renders/yrweub509u/out.mp4"
                                                         autoplay="" muted="" loop="">
                                                     </video>
                                                 </div>
-                                                <div class="aspect-[9/16] video-hight h-72 overflow-hidden rounded bg-neutral-100">
-                                                    <video
+                                                <div class="aspect-[9/16] rounded ">
+                                                    <video class="h-64"
                                                         src="https://s3.us-east-1.amazonaws.com/remotionlambda-useast1-se782d1snq/renders/oiix1l1v2z/out.mp4"
                                                         autoplay="" muted="" loop="">
                                                     </video>
                                                 </div>
-                                                <div class="aspect-video video-hight h-72 overflow-hidden rounded bg-neutral-100">
-                                                    <video
+                                                <div class="aspect-video rounded ">
+                                                    <video class="h-64"
                                                         src="https://s3.us-east-1.amazonaws.com/remotionlambda-useast1-se782d1snq/renders/6jf0w4247b/out.mp4"
                                                         autoplay="" muted="" loop="">
                                                     </video>
 
                                                 </div>
-                                                <div class="aspect-[9/16] video-hight h-72 overflow-hidden rounded bg-neutral-100">
-                                                    <video
+                                                <div class="aspect-[9/16] rounded ">
+                                                    <video class="h-64"
                                                         src="https://s3.us-east-1.amazonaws.com/remotionlambda-useast1-se782d1snq/renders/2xmr6mc8vq/out.mp4"
                                                         autoplay="" muted="" loop="">
                                                     </video>
@@ -413,7 +428,7 @@
                         <div class="flex justify-center w-full flex-wrap" style="width: 90%;">
                             <div class=" p-2 sm:w-1/2 lg:w-1/6" style="width: 23rem;">
                                 <div
-                                    class="flex flex-col justify-between gap-4 rounded-lg border-4 p-4 sm:h-[250px] border-neutral-900">
+                                    class="flex flex-col justify-center items-center gap-4 rounded-lg border-4 p-4 sm:h-[250px] border-neutral-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"
                                         class="w-10 lg:w-14 text-purple-400/60">
@@ -421,7 +436,7 @@
                                             d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z">
                                         </path>
                                     </svg>
-                                    <div>
+                                    <div class="text-center">
                                         <p class="text-lg font-semibold text-neutral-900 ">Accurate Subtitles</p>
                                         <p class="text-md text-neutral-400">AI generated editable transcription in 48
                                             languages.</p>
@@ -430,7 +445,7 @@
                             </div>
                             <div class=" p-2 sm:w-1/2 lg:w-1/6" style="width: 23rem;">
                                 <div
-                                    class="flex flex-col justify-between gap-4 rounded-lg border-4 p-4 sm:h-[250px] border-neutral-900">
+                                    class="flex flex-col justify-center items-center gap-4 rounded-lg border-4 p-4 sm:h-[250px] border-neutral-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"
                                         class="w-10 lg:w-14 text-green-400/60">
@@ -438,7 +453,7 @@
                                             d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z">
                                         </path>
                                     </svg>
-                                    <div>
+                                    <div class="text-center">
                                         <p class="text-lg font-semibold text-neutral-900 ">Auto Framing</p>
                                         <p class="text-md text-neutral-400">Editor.ai Automatically frame faces for
                                             vertical
@@ -448,7 +463,7 @@
                             </div>
                             <div class=" p-2 sm:w-1/2 lg:w-1/6" style="width: 23rem;">
                                 <div
-                                    class="flex flex-col justify-between gap-4 rounded-lg border-4 p-4 sm:h-[250px] border-neutral-900">
+                                    class="flex flex-col justify-center items-center gap-4 rounded-lg border-4 p-4 sm:h-[250px] border-neutral-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"
                                         class="w-10 lg:w-14 text-yellow-400/60">
@@ -456,7 +471,7 @@
                                             d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z">
                                         </path>
                                     </svg>
-                                    <div>
+                                    <div class="text-center">
                                         <p class="text-lg font-semibold text-neutral-900 ">Auto Emojis</p>
                                         <p class="text-md text-neutral-400">AI suggested emojis to create more engaging
                                             shorts</p>
@@ -465,7 +480,7 @@
                             </div>
                             <div class=" p-2 sm:w-1/2 lg:w-1/6" style="width: 23rem;">
                                 <div
-                                    class="flex flex-col justify-between gap-4 rounded-lg border-4 p-4 sm:h-[250px] border-neutral-900">
+                                    class="flex flex-col justify-center items-center gap-4 rounded-lg border-4 p-4 sm:h-[250px] border-neutral-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"
                                         class="w-10 lg:w-14 text-blue-400/60">
@@ -473,7 +488,7 @@
                                             d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 0 1-1.125-1.125M3.375 19.5h1.5C5.496 19.5 6 18.996 6 18.375m-3.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-1.5A1.125 1.125 0 0 1 18 18.375M20.625 4.5H3.375m17.25 0c.621 0 1.125.504 1.125 1.125M20.625 4.5h-1.5C18.504 4.5 18 5.004 18 5.625m3.75 0v1.5c0 .621-.504 1.125-1.125 1.125M3.375 4.5c-.621 0-1.125.504-1.125 1.125M3.375 4.5h1.5C5.496 4.5 6 5.004 6 5.625m-3.75 0v1.5c0 .621.504 1.125 1.125 1.125m0 0h1.5m-1.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m1.5-3.75C5.496 8.25 6 7.746 6 7.125v-1.5M4.875 8.25C5.496 8.25 6 8.754 6 9.375v1.5m0-5.25v5.25m0-5.25C6 5.004 6.504 4.5 7.125 4.5h9.75c.621 0 1.125.504 1.125 1.125m1.125 2.625h1.5m-1.5 0A1.125 1.125 0 0 1 18 7.125v-1.5m1.125 2.625c-.621 0-1.125.504-1.125 1.125v1.5m2.625-2.625c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125M18 5.625v5.25M7.125 12h9.75m-9.75 0A1.125 1.125 0 0 1 6 10.875M7.125 12C6.504 12 6 12.504 6 13.125m0-2.25C6 11.496 5.496 12 4.875 12M18 10.875c0 .621-.504 1.125-1.125 1.125M18 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m-12 5.25v-5.25m0 5.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125m-12 0v-1.5c0-.621-.504-1.125-1.125-1.125M18 18.375v-5.25m0 5.25v-1.5c0-.621.504-1.125 1.125-1.125M18 13.125v1.5c0 .621.504 1.125 1.125 1.125M18 13.125c0-.621.504-1.125 1.125-1.125M6 13.125v1.5c0 .621-.504 1.125-1.125 1.125M6 13.125C6 12.504 5.496 12 4.875 12m-1.5 0h1.5m-1.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M19.125 12h1.5m0 0c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h1.5m14.25 0h1.5">
                                         </path>
                                     </svg>
-                                    <div>
+                                    <div class="text-center">
                                         <p class="text-lg font-semibold text-neutral-900 ">Magic B-Roll</p>
                                         <p class="text-md text-neutral-400">Automatically add relevant b-roll to
                                             increase engagement</p>
@@ -482,7 +497,7 @@
                             </div>
                             <div class=" p-2 sm:w-1/2 lg:w-1/6" style="width: 23rem;">
                                 <div
-                                    class="flex flex-col justify-between gap-4 rounded-lg border-4 p-4 sm:h-[250px] border-neutral-900">
+                                    class="flex flex-col justify-center items-center gap-4 rounded-lg border-4 p-4 sm:h-[250px] border-neutral-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"
                                         class="w-10 lg:w-14 text-red-400/60">
@@ -490,7 +505,7 @@
                                             d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z">
                                         </path>
                                     </svg>
-                                    <div>
+                                    <div class="text-center">
                                         <p class="text-lg font-semibold text-neutral-900 ">Background Music</p>
                                         <p class="text-md text-neutral-400">Add engaging background music to capture
                                             attention</p>
@@ -499,7 +514,7 @@
                             </div>
                             <div class=" p-2 sm:w-1/2 lg:w-1/6" style="width: 23rem;">
                                 <div
-                                    class="flex flex-col justify-between gap-4 rounded-lg border-4 p-4 sm:h-[250px] border-neutral-900">
+                                    class="flex flex-col justify-center items-center gap-4 rounded-lg border-4 p-4 sm:h-[250px] border-neutral-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"
                                         class="w-10 lg:w-14 text-pink-400/60">
@@ -507,7 +522,7 @@
                                             d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25">
                                         </path>
                                     </svg>
-                                    <div>
+                                    <div class="text-center">
                                         <p class="text-lg font-semibold text-neutral-900 ">Social Media</p>
                                         <p class="text-md text-neutral-400">Post &amp; schedule to Instagram, TikTok,
                                             YouTube, &amp; more</p>
